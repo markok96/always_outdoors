@@ -1,0 +1,14 @@
+$font-stack: 'Open Sans', sans-serif;
+$primary-color: #276474;
+$secondary-color: #F0FFF0;
+$hover-color: #d49222;
+
+// Functions
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return $primary-color;
+    } @else {
+        @return $secondary-color;
+    }
+}

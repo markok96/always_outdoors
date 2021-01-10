@@ -1,0 +1,88 @@
+
+@media(max-width: 700px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        background-color: $primary-color;
+        text-align: center;
+        padding: 1em;
+        .banner {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+        }
+        .search {
+            display: flex;
+            flex-direction: column;
+        }
+        .searchInput::placeholder {
+            color: $secondary-color;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+        nav ul li {
+            padding: .5em;
+            text-align: center;
+        }
+    }
+
+    .showcase {
+        text-align: center;
+        .wrapper {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-areas:
+            "text1"
+            "text2"
+            "img";
+            grid-gap: 1em;
+        }
+        .description-first {
+            padding: 1em;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .description-second {
+            padding: 1em;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .img-city {
+            width: 70%;
+            margin: auto;
+        }
+
+        .img-city:hover {
+            transform: scale(1.1);
+            transition: transform 250ms ease-in-out;
+        }
+    }
+
+    .socials {
+        .list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .tours {
+        padding: 0;
+        .tour {
+            margin: auto;
+        }
+        
+        .tour-img:hover {
+            transform: scale(1.1);
+            transition: transform 250ms ease-in-out;
+        }
+    }
+}
